@@ -1,4 +1,4 @@
-class MonoToStereo < Formula
+class Mono2stereo < Formula
   desc ""
   homepage ""
   url "https://github.com/kunichiko/MS2109-mono-to-stereo-mac/archive/0.9.1.tar.gz"
