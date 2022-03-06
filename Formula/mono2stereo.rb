@@ -1,17 +1,12 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class MonoToStereo < Formula
   desc ""
   homepage ""
-  url "https://github.com/kunichiko/MS2109-mono-to-stereo-mac/archive/0.9.0.tar.gz"
-  sha256 "0dab36aeef31456d4b951ff85a782d3a537c6263b301365b08878bc44a55d222"
+  url "https://github.com/kunichiko/MS2109-mono-to-stereo-mac/archive/0.9.1.tar.gz"
+  sha256 "8d08a7d686b4437cf17373b2dc2ecf77f9684dbd8a56358b0d726eb5ff7d6194"
   license ""
 
-  # depends_on "cmake" => :build
-
   def install
-    system "make", "install", "PREFIX=#{prefix}"
+    system "make", "install", "prefix=#{prefix}"
   end
 
 end
