@@ -1,9 +1,9 @@
 class Mono2stereo < Formula
   desc ""
   homepage ""
-  url "https://github.com/kunichiko/MS2109-mono-to-stereo-mac/archive/0.9.1.tar.gz"
-  sha256 "8d08a7d686b4437cf17373b2dc2ecf77f9684dbd8a56358b0d726eb5ff7d6194"
-  license ""
+  url "https://github.com/kunichiko/MS2109-mono-to-stereo-mac/archive/1.0.0.tar.gz"
+  sha256 "42f53303cccdcff381dc561b15d935f26aa8f1cf71aaf6aad255f3173c8c116a"
+  license "MIT"
 
   def install
     system "make", "install", "prefix=#{prefix}"
