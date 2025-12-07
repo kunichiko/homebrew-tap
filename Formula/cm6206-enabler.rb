@@ -1,8 +1,8 @@
 class Cm6206Enabler < Formula
   desc "Enable audio output on CM6206 USB audio devices for macOS"
   homepage "https://github.com/kunichiko/CM6206-enabler-mac"
-  url "https://github.com/kunichiko/CM6206-enabler-mac/archive/refs/tags/v2.2.tar.gz"
-  sha256 "c711282bd25a187280942b3f53ff04646dee746c0476dc249eb249b149a6746b"
+  url "https://github.com/kunichiko/CM6206-enabler-mac/archive/refs/tags/v2.4.tar.gz"
+  sha256 "ea0d049a1b66bf790e388d2cd41f8bec9e33c6fee0c35f2cc7af96b98e6f6e5d"
   license "GPL-3.0-or-later"
 
   depends_on :macos
