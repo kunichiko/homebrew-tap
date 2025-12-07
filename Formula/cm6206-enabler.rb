@@ -1,8 +1,8 @@
 class Cm6206Enabler < Formula
   desc "Enable audio output on CM6206 USB audio devices for macOS"
   homepage "https://github.com/kunichiko/CM6206-enabler-mac"
-  url "https://github.com/kunichiko/CM6206-enabler-mac/archive/refs/tags/v2.4.tar.gz"
-  sha256 "ea0d049a1b66bf790e388d2cd41f8bec9e33c6fee0c35f2cc7af96b98e6f6e5d"
+  url "https://github.com/kunichiko/CM6206-enabler-mac/archive/refs/tags/v3.0.0.tar.gz"
+  sha256 "1947f94728f2e7963a2ffe4706f91c078812e0961d0f88c85b7dfb4354b6febd"
   license "GPL-3.0-or-later"
 
   depends_on :macos
@@ -22,17 +22,20 @@ class Cm6206Enabler < Formula
       1. ワンショットモード（1回だけ初期化）:
          $ cm6206-enabler
 
-      2. デーモンモード（常駐して自動初期化）:
-         $ cm6206-enabler -d
+      2. 詳細モードで実行:
+         $ cm6206-enabler -v
 
-      自動起動設定:
-      ==========
+      自動起動設定（推奨）:
+      ==================
 
-      LaunchDaemonとして登録することで、システム起動時やスリープ復帰時に
-      自動的にCM6206デバイスを初期化できます。
+      LaunchAgent として登録（sudo不要、推奨）:
+         $ cm6206-enabler install-agent
+
+      LaunchDaemon として登録（高度な用途）:
+         $ sudo cm6206-enabler install-daemon
 
       詳細は以下を参照してください:
-      https://github.com/kunichiko/CM6206-enabler-mac#launchdaemonとしてインストール
+      https://github.com/kunichiko/CM6206-enabler-mac#自動起動設定
     EOS
   end
 
